@@ -1,0 +1,4 @@
+[0602/032726.995:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0602/032726.995:ERROR:file_io.cc(89)] ReadExactly: expected 40, observed 0
+[0602/032727.035:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0602/032727.035:ERROR:file_io.cc(89)] ReadExactly: expected 40, observed 0

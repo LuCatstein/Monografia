@@ -1,0 +1,29 @@
+<div>
+  <form [formGroup]="form"
+    (ngSubmit)="submitForm()"
+  >
+    <input
+      class="todo-input"
+      formControlName="todoInput"
+      (keyup)="inputChanged()"
+      placeholder="o que devo fazer?"
+    />
+
+    <button
+      type="submit"
+      class="todo-submit"
+      [disabled]="(todoList$ | async).todoList.disableAddTodo"
+    >
+      Adicionar
+    </button>
+
+    <button
+      class="todo-undelete"
+      (click)="undelete()"
+      [disabled]="(todoList$ | async).todoList.disableUndelete"
+    >
+      Desfazer
+    </button>
+
+  </form>
+</div>

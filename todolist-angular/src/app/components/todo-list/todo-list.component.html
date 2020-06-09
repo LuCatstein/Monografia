@@ -1,0 +1,20 @@
+<ul>
+  <li *ngFor="let todo of (todoList$ | async).todoList.todos">
+    <span class="todo-text">
+      {{todo.text}}
+    </span>
+
+    <button
+      type="button"
+      class="todo-delete"
+      (click)="deleteTodo(todo.id)"
+    >
+      Apagar
+    </button>
+  </li>
+</ul>
+
+<pre>
+
+  {{ (todoList$ | async) | json }}
+</pre>
